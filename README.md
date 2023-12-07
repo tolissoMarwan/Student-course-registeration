@@ -1,5 +1,5 @@
-## Sudent-course-registeration
-# Initial Situation
+# Sudent-course-registeration
+## Initial Situation
 
 At a university, 3 courses are offered: "Programming", "Databases" and "Software Engineering".
 
@@ -27,9 +27,9 @@ The class PERSON should have at least the following data members:
 - First name
 - Email
   
-## Task: 
+# Task: 
 
-# Create a program with a menu that covers the following situation:
+## Create a program with a menu that covers the following situation:
 
 1. Registration for a course (including querying student data). Each student has a unique email, meaning there can't be two or more students with the same email in the same course.
 
