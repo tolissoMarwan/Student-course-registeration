@@ -1,11 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <signal.h>
 
 #include "course.h"
-#include "lecturer.h"
-#include "student.h"
 
 int getMenuChoice() {
 	int choice;
@@ -177,7 +174,7 @@ int main()
 		case 3: {
 			// Display courses not fully booked
 			for (const auto& course : courses) {
-				int freePlaces = course->getMaxParticipants() - course->getParticipantsCount();
+				int freePlaces = course->getMaxParticipants() - static_cast<int>(course->getParticipantsCount());
 				if (course->getParticipantsCount() < course->getMaxParticipants()) {
 					course->displayCourseInfo();
 					std::cout << "Free places: " << freePlaces << "\n";
